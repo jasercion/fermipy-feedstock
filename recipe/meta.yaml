@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: fermipy
@@ -7,7 +7,7 @@ package:
 source:
   fn: fermipy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz 
-  md5: e722bcf2e4dc243a13fb81f24982f611
+  md5: e31ab8262a5c22713c4f9d55462a6cca
 
 build:
   number: 0
@@ -18,7 +18,12 @@ build:
     - fermipy-clone-configs = fermipy.scripts.clone_configs:main
     - fermipy-collect-sources = fermipy.scripts.collect_sources:main
     - fermipy-cluster-sources = fermipy.scripts.cluster_sources:main
-  
+    - fermipy-flux-sensitivity = fermipy.scripts.flux_sensitivity:main
+    - fermipy-run-tempo = fermipy.scripts.run_tempo:main
+    - fermipy-select = fermipy.scripts.select_data:main
+    - fermipy-validate = fermipy.scripts.validate:main
+    - fermipy-coadd = fermipy.merge_utils:main
+    
 requirements:
   build:
     - python
@@ -27,8 +32,8 @@ requirements:
   run:
     - python
     - numpy >=1.6.1
-    - astropy >=1.0
-    - matplotlib >=1.4.0
+    - astropy >=1.2.1
+    - matplotlib >=1.5.0
     - scipy >=0.14
     - pyyaml
     - healpy
