@@ -1,4 +1,4 @@
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: fermipy
@@ -7,7 +7,7 @@ package:
 source:
   fn: fermipy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz 
-  md5: ed033f2e45a9bfac85b02d93477d3563
+  md5: 565c55c46b5d668e0e84f4e5d5d08508
 
 build:
   number: 0
@@ -47,7 +47,7 @@ about:
   home: https://github.com/fermiPy/fermipy
   license:  BSD 3-Clause
   summary: "Fermipy is a python package for analysis of Fermi-LAT data"
-  license_file: licenses/LICENSE.rst
+  license_file: LICENSE.rst
   doc_url: http://fermipy.readthedocs.io
   dev_url: https://github.com/fermiPy/fermipy
 
