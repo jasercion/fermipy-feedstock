@@ -1,4 +1,4 @@
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: fermipy
@@ -7,7 +7,7 @@ package:
 source:
   fn: fermipy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz 
-  md5: 565c55c46b5d668e0e84f4e5d5d08508
+  md5: d87fea8845e57b76bb602df355aa71ee
 
 build:
   number: 0
