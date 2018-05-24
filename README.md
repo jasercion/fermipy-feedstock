@@ -14,14 +14,16 @@ Summary: Fermipy is a python package for analysis of Fermi-LAT data
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fermipy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fermipy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fermipy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fermipy-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/fermipy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/fermipy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/fermipy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/fermipy-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fermipy/badges/version.svg)](https://anaconda.org/conda-forge/fermipy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fermipy/badges/downloads.svg)](https://anaconda.org/conda-forge/fermipy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fermipy-green.svg)](https://anaconda.org/conda-forge/fermipy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fermipy.svg)](https://anaconda.org/conda-forge/fermipy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fermipy.svg)](https://anaconda.org/conda-forge/fermipy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fermipy.svg)](https://anaconda.org/conda-forge/fermipy) |
 
 Installing fermipy
 ==================
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
