@@ -1,4 +1,4 @@
-{% set version = "0.17.3" %}
+{% set version = "0.17.4" %}
 
 package:
   name: fermipy
@@ -7,10 +7,10 @@ package:
 source:
   fn: fermipy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz 
-  sha256: daa5c9d749898f7bc89e3f299216ecf1bf7f5470a29487c77dd6dd4c569b0c24
+  sha256: 7d72c8183858adcd5bf9fcd4576444de7a17d5908706487bd33ae2d91c99b7d2
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [win]
   entry_points:    
