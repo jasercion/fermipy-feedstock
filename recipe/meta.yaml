@@ -98,6 +98,7 @@ requirements:
     - pyyaml
     - healpy
     - gammapy >=0.7.0
+    - fermitools
 
 test:
   imports:
