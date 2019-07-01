@@ -7,7 +7,7 @@ package:
 source:
   fn: fermipy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz 
-  sha256: e0d443952aed1d9a0c37b99afded41e33a4e3f536dbca529267d4f0a5dc9156e
+  sha256: df2289ad3d32e5aec35a3f9446bee430783e2ced2cb7984afee2f34beee11a1b
 
 build:
   number: 0
