@@ -1,3 +1,7 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About fermipy
 =============
 
@@ -177,5 +181,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@woodmd](https://github.com/woodmd/)
+* [@dimauromattia](https://github.com/dimauromattia/)
+* [@eacharles](https://github.com/eacharles/)
 

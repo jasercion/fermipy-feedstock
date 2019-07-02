@@ -1,4 +1,4 @@
-{% set version = "0.17.1" %}
+{% set version = "0.17.4" %}
 
 package:
   name: fermipy
@@ -13,7 +13,7 @@ build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [win]
-  entry_points:
+  entry_points:    
     - fermipy-dispatch = fermipy.scripts.dispatch:main
     - fermipy-clone-configs = fermipy.scripts.clone_configs:main
     - fermipy-collect-sources = fermipy.scripts.collect_sources:main
@@ -83,7 +83,7 @@ build:
     - fermipy-collect-sed-sg = fermipy.jobs.target_collect:CollectSED_SG.main
     - fermipy-plot-castro = fermipy.jobs.target_plotting:PlotCastro.main
     - fermipy-plot-castro-sg = fermipy.jobs.target_plotting:PlotCastro_SG.main
-    
+
 requirements:
   build:
     - python
@@ -98,6 +98,7 @@ requirements:
     - pyyaml
     - healpy
     - gammapy >=0.7.0
+    - fermitools
 
 test:
   imports:
@@ -113,5 +114,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - woodmd
     - eacharles
+    - dimauromattia
