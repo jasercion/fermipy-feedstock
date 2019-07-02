@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About fermipy
 =============
 
