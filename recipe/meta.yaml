@@ -98,7 +98,7 @@ requirements:
     - pyyaml
     - healpy
     - gammapy >=0.7.0
-    - fermi/fermitools
+    - https://anaconda.org/fermi/fermitools
 
 test:
   imports:
