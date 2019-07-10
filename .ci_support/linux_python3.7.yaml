@@ -1,5 +1,5 @@
 channel_sources:
-- fermi,conda-forge,conda-forge/label/cf201901,defaults
+- conda-forge,defaults
 channel_targets:
 - conda-forge main
 docker_image:
