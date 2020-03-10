@@ -82,16 +82,7 @@ Current build status
       <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
     </td>
   </tr>
-<<<<<<< HEAD
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
-    </td>
-  </tr>
-=======
 ![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
->>>>>>> MNT: Re-rendered with conda-build 3.15.1, conda-smithy 3.4.0, and conda-forge-pinning 2019.07.01
 </table>
 
 Current release info
@@ -137,11 +128,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-<<<<<<< HEAD
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-=======
 and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
->>>>>>> MNT: Re-rendered with conda-build 3.15.1, conda-smithy 3.4.0, and conda-forge-pinning 2019.07.01
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -190,11 +177,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-<<<<<<< HEAD
 * [@dimauromattia](https://github.com/dimauromattia/)
 * [@eacharles](https://github.com/eacharles/)
-* [@giacomov](https://github.com/giacomov/)
-=======
->>>>>>> MNT: Re-rendered with conda-build 3.15.1, conda-smithy 3.4.0, and conda-forge-pinning 2019.07.01
-* [@woodmd](https://github.com/woodmd/)
 
