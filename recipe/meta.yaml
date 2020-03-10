@@ -1,4 +1,4 @@
-{% set version = "0.17.4" %}
+{% set version = "0.18.1" %}
 
 package:
   name: fermipy
@@ -6,14 +6,14 @@ package:
 
 source:
   fn: fermipy-{{version}}.tar.gz
-  url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz 
-  sha256: 7d72c8183858adcd5bf9fcd4576444de7a17d5908706487bd33ae2d91c99b7d2
+  url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz
+  sha256: 5e8bc47f43dc2f04bfa20685ab4ebb7eec9da0bc1013e0468a4b424a1a4ecee0
 
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: True  # [win]
-  entry_points:    
+  skip: true  # [win]
+  entry_points:
     - fermipy-dispatch = fermipy.scripts.dispatch:main
     - fermipy-clone-configs = fermipy.scripts.clone_configs:main
     - fermipy-collect-sources = fermipy.scripts.collect_sources:main
@@ -105,8 +105,8 @@ test:
 
 about:
   home: https://github.com/fermiPy/fermipy
-  license:  BSD 3-Clause
-  summary: "Fermipy is a python package for analysis of Fermi-LAT data"
+  license: BSD 3-Clause
+  summary: Fermipy is a python package for analysis of Fermi-LAT data
   license_file: LICENSE.rst
   doc_url: http://fermipy.readthedocs.io
   dev_url: https://github.com/fermiPy/fermipy
