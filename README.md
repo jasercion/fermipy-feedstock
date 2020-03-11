@@ -198,6 +198,4 @@ Feedstock Maintainers
 
 * [@dimauromattia](https://github.com/dimauromattia/)
 * [@eacharles](https://github.com/eacharles/)
-* [@giacomov](https://github.com/giacomov/)
-* [@woodmd](https://github.com/woodmd/)
 
