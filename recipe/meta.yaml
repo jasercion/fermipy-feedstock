@@ -6,9 +6,8 @@ package:
 
 source:
   fn: fermipy-{{version}}.tar.gz
-  url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz 
+  url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz
   sha256: b3e536a09589ded79bd1102bc879462f423e828fe05d0ee933ffdfe7a5586931
-  
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
