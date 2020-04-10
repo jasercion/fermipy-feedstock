@@ -10,7 +10,7 @@ source:
   sha256: b3e536a09589ded79bd1102bc879462f423e828fe05d0ee933ffdfe7a5586931
 build:
   noarch : python
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - fermipy-dispatch = fermipy.scripts.dispatch:main
