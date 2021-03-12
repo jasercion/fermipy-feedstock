@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: fermipy
@@ -7,10 +7,10 @@ package:
 source:
   fn: fermipy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz
-  sha256: 9f36fcbc56e0b33861b1526ff1b95973fc7d450637d6d3a43adb0619907ab4c9
+  sha256: 02a23aa7431a7791fca3ee2d9eda38eec2fa1404ee0c589c985ed7e3f5c8c6a2
 build:
   number: 0
-  skip: true  # [win]
+  skip: true  # [win or py==38]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - fermipy-dispatch = fermipy.scripts.dispatch:main
@@ -85,7 +85,7 @@ build:
 
 requirements:
   build:
-    - python
+    - python {{ python }}
     - setuptools
 
   host:
@@ -100,7 +100,7 @@ requirements:
     - gammapy
 
   run:
-    - python
+    - python {{ python }}
     - {{ pin_compatible('numpy') }}
     - astropy
     - matplotlib-base
