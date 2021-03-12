@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz
   sha256: 02a23aa7431a7791fca3ee2d9eda38eec2fa1404ee0c589c985ed7e3f5c8c6a2
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py==38]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -101,7 +101,6 @@ requirements:
     - pyyaml
     - healpy
     - gammapy
-    - fermitools
 
 test:
   imports:
