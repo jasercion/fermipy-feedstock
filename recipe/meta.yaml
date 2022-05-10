@@ -99,7 +99,7 @@ requirements:
     - healpy
     - gammapy
 
-  run: 
+  run:
     - python {{ python }}
 
 test:
