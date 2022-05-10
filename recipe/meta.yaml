@@ -91,16 +91,16 @@ requirements:
   host:
     - python {{ python }}
     - pip
-
-  run:
-    - python {{ python }}
-    - {{ pin_compatible('numpy') }}
+    - numpy
     - astropy
     - matplotlib-base
     - scipy
     - pyyaml
     - healpy
     - gammapy
+
+  run: 
+    - python {{ python }}
 
 test:
   imports:
