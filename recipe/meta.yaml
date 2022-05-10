@@ -101,6 +101,13 @@ requirements:
 
   run:
     - python {{ python }}
+    - {{ pin_compatible('numpy') }}
+    - astropy
+    - matplotlib-base
+    - scipy
+    - pyyaml
+    - healpy
+    - gammapy
 
 test:
   imports:
