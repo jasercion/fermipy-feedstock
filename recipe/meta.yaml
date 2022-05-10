@@ -86,11 +86,11 @@ build:
 
 requirements:
   build:
-    - python >=3.7
+    - python >=3.7,!=3.8.*
     - setuptools
 
   host:
-    - python >=3.7
+    - python >=3.7,!=3.8.*
     - pip
     - numpy
     - astropy
@@ -101,7 +101,7 @@ requirements:
     - gammapy
 
   run:
-    - python >=3.7
+    - python >=3.7,!=3.8.*
     - {{ pin_compatible('numpy') }}
     - astropy
     - matplotlib-base
@@ -113,6 +113,13 @@ requirements:
 test:
   imports:
     - fermipy
+  # requires:
+  #   - pytest
+  #   - pytest-cov
+  # source_files:
+  #   - fermipy/
+  # commands:
+  #   - python -m pytest --cov=./fermipy --cov-report=xml fermipy
 
 about:
   home: https://github.com/fermiPy/fermipy
