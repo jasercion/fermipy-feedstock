@@ -1,16 +1,16 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: fermipy
   version: {{ version }}
 
 source:
-  fn: fermipy-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/f/fermipy/fermipy-{{ version }}.tar.gz
-  sha256: 02a23aa7431a7791fca3ee2d9eda38eec2fa1404ee0c589c985ed7e3f5c8c6a2
+  git_url: https://github.com/fermiPy/fermipy.git
+  git_rev: v1.1
+
 build:
-  number: 1
-  skip: true  # [win or py==38]
+  number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - fermipy-dispatch = fermipy.scripts.dispatch:main
@@ -85,23 +85,13 @@ build:
 
 requirements:
   build:
-    - python {{ python }}
+    - pip
+    - python >=3.7,!=3.8.*
     - setuptools
 
-  host:
-    - python {{ python }}
-    - pip
-    - numpy
-    - astropy
-    - matplotlib-base
-    - scipy
-    - pyyaml
-    - healpy
-    - gammapy
-
   run:
-    - python {{ python }}
-    - {{ pin_compatible('numpy') }}
+    - python >=3.7,!=3.8.*
+    - numpy
     - astropy
     - matplotlib-base
     - scipy
@@ -112,10 +102,18 @@ requirements:
 test:
   imports:
     - fermipy
+  # requires:
+  #   - pytest
+  #   - pytest-cov
+  #   - fermitools >=2.1
+  # source_files:
+  #   - fermipy/
+  # commands:
+  #   - python -m pytest --cov=./fermipy --cov-report=xml fermipy
 
 about:
   home: https://github.com/fermiPy/fermipy
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   summary: Fermipy is a python package for analysis of Fermi-LAT data
   license_file: LICENSE.rst
   doc_url: http://fermipy.readthedocs.io
@@ -125,5 +123,5 @@ extra:
   recipe-maintainers:
     - eacharles
     - dimauromattia
-    - henrikef
     - areustle
+    - henrikef
