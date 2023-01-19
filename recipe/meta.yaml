@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  git_url: {{ environ.get('FEEDSTOCK_ROOT', '..') }}
+  git_url: https://github.com/fermiPy/fermipy.git
 
 build:
   number: 0
