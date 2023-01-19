@@ -1,12 +1,12 @@
-{% set version = "1.1.0" %}
+{% set name = "fermipy" %}
+{% set version = environ.get('GIT_DESCRIBE_TAG', 'untagged')|string|replace('-','_') %}
 
 package:
-  name: fermipy
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
   git_url: https://github.com/fermiPy/fermipy.git
-  git_rev: v1.1
 
 build:
   number: 0
@@ -84,7 +84,7 @@ build:
     - fermipy-plot-castro-sg = fermipy.jobs.target_plotting:PlotCastro_SG.main
 
 requirements:
-  build:
+  host:
     - pip
     - python >=3.7,!=3.8.*
     - setuptools
