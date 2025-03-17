@@ -86,11 +86,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9,<3.10
+    - python 
     - setuptools
 
   run:
-    - python >=3.9,<3.10
+    - python
     - numpy >=1.16
     - astropy-base <=6
     - matplotlib-base >=3.3
