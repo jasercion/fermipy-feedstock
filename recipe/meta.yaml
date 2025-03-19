@@ -92,9 +92,9 @@ requirements:
   run:
     - python >=3.9
     - numpy >=1.16
-    - astropy-base <=6
+    - astropy-base
     - matplotlib-base >=3.3
-    - scipy 
+    - scipy <1.12
     - pyyaml
     - healpy
     - gammapy >=1.0
