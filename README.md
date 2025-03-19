@@ -151,4 +151,5 @@ Feedstock Maintainers
 * [@dimauromattia](https://github.com/dimauromattia/)
 * [@eacharles](https://github.com/eacharles/)
 * [@henrikef](https://github.com/henrikef/)
+* [@ndilalla](https://github.com/ndilalla/)
 
